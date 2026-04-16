@@ -1,6 +1,7 @@
 # app.py
 import streamlit as st
-from retriever import generate_response, policy_links
+from config import POLICY_LINKS as policy_links
+from rag_engine import generate_response
 
 
 # Set page config

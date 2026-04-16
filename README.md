@@ -48,11 +48,13 @@ streamlit run app.py
 ## Project Structure
 ```
 📂 UDST-Policy-Chatbot
-│-- 📜 retriever.py (Fetches and indexes policy data)
+│-- ⚙️ config.py (Shared constants and policy links)
+│-- 📄 policy_data.py (Fetches, cleans, and chunks policy text)
+│-- 🧠 rag_engine.py (Embeddings, FAISS index, and answer generation)
+│-- 🔁 retriever.py (Compatibility wrapper for older imports)
 │-- 🤖 app.py (Streamlit web app for chatbot UI)
 │-- 📄 requirements.txt (Dependencies list)
 │-- 🔑 .env (Stores Mistral API key - NOT included in repo)
-│-- 📁 policy_pdfs/ (Stores downloaded policy documents, if needed)
 ```
 
 ---
