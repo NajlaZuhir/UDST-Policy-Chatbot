@@ -12,6 +12,26 @@ A **Retrieval-Augmented Generation (RAG)** chatbot that provides quick, accurate
 
 ---
 
+## Project Structure
+```
+📂 UDST-Policy-Chatbot
+│-- 🤖 app.py (Streamlit web app for chatbot UI)
+│-- ⚙️ config.py (Shared constants and policy links)
+│-- 📄 policy_data.py (Fetches, cleans, and chunks policy text)
+│-- 🧠 rag_engine.py (Embeddings, FAISS index, and answer generation)
+│-- 🔁 retriever.py (Compatibility wrapper for older imports)
+│-- 📄 requirements.txt (Dependencies list)
+│-- 🔑 .env (Stores Mistral API key - NOT included in repo)
+```
+---
+
+## Technologies Used
+- 📝 **BeautifulSoup & Requests** - Web scraping for policy extraction
+- 🧠 **Mistral AI** - Embedding-based retrieval and response generation
+- 🔍 **FAISS** - Efficient vector search for policy retrieval
+- 🌐 **Streamlit** - Web UI for chatbot interaction
+
+---
 ## Quick Start
 ### 1) Clone the Repository
 ```bash
@@ -49,28 +69,6 @@ streamlit run app.py
 ### 6) Ask a Policy Question
 - Example: *"What is the student attendance policy?"*
 - The chatbot will return relevant policy details along with official UDST references.
-
----
-
-## Project Structure
-```
-📂 UDST-Policy-Chatbot
-│-- 🤖 app.py (Streamlit web app for chatbot UI)
-│-- ⚙️ config.py (Shared constants and policy links)
-│-- 📄 policy_data.py (Fetches, cleans, and chunks policy text)
-│-- 🧠 rag_engine.py (Embeddings, FAISS index, and answer generation)
-│-- 🔁 retriever.py (Compatibility wrapper for older imports)
-│-- 📄 requirements.txt (Dependencies list)
-│-- 🔑 .env (Stores Mistral API key - NOT included in repo)
-```
-
----
-
-## Technologies Used
-- 📝 **BeautifulSoup & Requests** - Web scraping for policy extraction
-- 🧠 **Mistral AI** - Embedding-based retrieval and response generation
-- 🔍 **FAISS** - Efficient vector search for policy retrieval
-- 🌐 **Streamlit** - Web UI for chatbot interaction
 
 ---
 LLM RAG Project | 2026
