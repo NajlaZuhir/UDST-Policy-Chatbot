@@ -1,7 +1,7 @@
-# UDST Policy Chatbot 📚🤖
+# UDST Policy Assistant 📚🤖
 
 ## Overview
-The **UDST Policy Chatbot** is an AI-powered assistant designed to provide quick and accurate answers to questions about **University of Doha for Science & Technology (UDST)** policies. It utilizes **retrieval-augmented generation (RAG)** to fetch relevant policy information and present structured responses.
+A **Retrieval-Augmented Generation (RAG)** chatbot designed to provide quick and accurate answers to questions about **University of Doha for Science & Technology (UDST)** policies. It fetch relevant policy information and present structured responses.
 
 ## Features
 - 📜 **Fetch and process university policies** from official UDST web pages.
@@ -12,34 +12,27 @@ The **UDST Policy Chatbot** is an AI-powered assistant designed to provide quick
 
 ---
 
-## Installation
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/NajlaZuhir/UDST-Policy-Chatbot.git
-cd UDST-Policy-Chatbot
-```
+## Quick Start
+### 1️) Clone the Repository
 
-### 2️⃣ Install Dependencies
+### 2️) Install Dependencies
 Ensure you have Python 3.8+ installed. Then run:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Set Up API Keys
+### 3️) Set Up API Keys
 Create a `.env` file in the root directory and add:
 ```
 MISTRAL_API_KEY=your_mistral_api_key
 ```
 
----
-
-## Usage
-### Run the Chatbot
+### 4) Run the Chatbot
 ```bash
 streamlit run app.py
 ```
 
-### Ask a Policy Question
+### 5) Ask a Policy Question
 - Example: *"What is the student attendance policy?"*
 - The chatbot will return relevant policy details along with official UDST references.
 
@@ -66,9 +59,8 @@ streamlit run app.py
 - 🌐 **Streamlit** - Web UI for chatbot interaction
 
 ---
+LLM RAG Project | 2025
 
-## Contributing
-Feel free to fork this repository, submit issues, or suggest improvements! 🚀
 
 
 
